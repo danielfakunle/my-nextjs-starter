@@ -1,42 +1,115 @@
-<<<<<<< HEAD
-# my-nextjs-starter
-A simple Next.js boilerplate.
-||||||| (empty tree)
-=======
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="public/logo.svg" alt="logo" width="200" height="auto" />
+  <h1>My Next.js Starter</h1>
+  <p>A simple Next.js boilerplate.</p>
+  <!-- Badges -->
+  <p>
+    <a href="https://github.com/danielfakunle/my-nextjs-starter/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/danielfakunle/my-nextjs-starter.svg?style=for-the-badge" alt="contributors" />
+    </a>
+    <a href="">
+      <img src="https://img.shields.io/github/last-commit/danielfakunle/my-nextjs-starter.svg?style=for-the-badge" alt="last update" />
+    </a>
+    </a>
+    <a href="hhttps://github.com/danielfakunle/my-nextjs-starter/issues/">
+      <img src="https://img.shields.io/github/issues/danielfakunle/my-nextjs-starter.svg?style=for-the-badge" alt="open issues" />
+    </a>
+    <a href="https://github.com/danielfakunle/my-nextjs-starter/blob/master/LICENSE">
+      <img src="https://img.shields.io/github/license/danielfakunle/my-nextjs-starter.svg?style=for-the-badge" alt="license" />
+    </a>
+  </p>
+</div>
+
+## About the Project
+
+DISCLAIMER: This project is intended for personal use.
+
+Welcome to `my-nextjs-starter`! This repository contains a boilerplate setup for a Next.js project. It's designed to help you kickstart your Next.js project with a clean and organized structure.
+
+## Features
+
+- **Next.js**: A powerful React framework for building fast and user-friendly applications.
+- **Theming**: Easily switch between different themes using a centralized theme provider.
+- **Folder Structure**: Organized folder structure for components, pages, and styles.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to get started with `my-nextjs-starter`:
+
+### Clone the Repository
+
+Clone this repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/danielfakunle/my-nextjs-starter.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Navigate to the project directory and install the required dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+cd my-nextjs-starter
+pnpm install
+```
 
-## Learn More
+The project forces pnpm. To disabled that, remove the following line from the package.json file:
 
-To learn more about Next.js, take a look at the following resources:
+```json
+{
+  //...
+  "scripts": {
+    //...
+    "preinstall": "npx only-allow pnpm" // remove this line
+  }
+  //...
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Start the Development Server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Start the development server:
 
-## Deploy on Vercel
+```bash
+pnpm dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see your application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> 3fea9fd (Initial commit from Create Next App)
+## Folder Structure
+
+The project structure is organized as follows:
+
+```
+my-nextjs-starter/
+├── public/             # Static files like images, icons, etc.
+├── src/
+│   ├── app/            # Next.js pages
+│   ├── components/     # Reusable components
+│   ├── lib/            # Utility functions and helpers
+│   ├── providers/      # Providers
+│   ├── styles/         # Global styles and theme configurations
+│   ├── utils/
+│   ├── theme/          # Theme provider and theme files
+│   └── ...
+├── next.config.js      # Next.js configuration
+├── package.json        # Project metadata and dependencies
+└── README.md           # Project documentation
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Shadcn](https://ui.shadcn.com/)
+
+---
+
+Happy coding!
+
+```
+Feel free to modify the content according to your specific setup and requirements.
+```
