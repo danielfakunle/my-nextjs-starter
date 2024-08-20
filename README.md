@@ -11,10 +11,10 @@
       <img src="https://img.shields.io/github/last-commit/danielfakunle/my-nextjs-starter.svg?style=for-the-badge" alt="last update" />
     </a>
     </a>
-    <a href="hhttps://github.com/danielfakunle/my-nextjs-starter/issues/">
+    <a href="https://github.com/danielfakunle/my-nextjs-starter/issues">
       <img src="https://img.shields.io/github/issues/danielfakunle/my-nextjs-starter.svg?style=for-the-badge" alt="open issues" />
     </a>
-    <a href="https://github.com/danielfakunle/my-nextjs-starter/blob/master/LICENSE">
+    <a href="https://github.com/danielfakunle/my-nextjs-starter/blob/main/LICENSE">
       <img src="https://img.shields.io/github/license/danielfakunle/my-nextjs-starter.svg?style=for-the-badge" alt="license" />
     </a>
   </p>
